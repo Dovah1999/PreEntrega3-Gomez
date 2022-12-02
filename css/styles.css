@@ -1,0 +1,133 @@
+/*variables de colores*/
+/*aca hago el reeset*/
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Playfair Display", serif;
+}
+
+.menu {
+  background-color: brown;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  /*cuestiones basicas del menu inicio*/
+}
+.menu .navegacion {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  align-items: flex-end;
+}
+.menu .navegacion .enlaces {
+  margin: 0.2rem;
+  text-decoration: none;
+}
+.menu .navegacion .enlaces a {
+  text-decoration: none;
+  color: white;
+  transition: 1s;
+  /*zona animada*/
+}
+.menu .navegacion .enlaces a:hover {
+  text-decoration: none;
+  color: rgb(237, 215, 117);
+  transition: 1s;
+}
+
+/*parte responsive para todos*/
+@media screen and (max-width: 767px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 460px) {
+  .menu {
+    gap: 0.5rem;
+  }
+  .menu .navegacion {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+.cosas {
+  background-color: rgb(34, 33, 33);
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+/*comienza la declaracion de la seccion informacion*/
+.info__texto {
+  margin: 2rem;
+  padding: 1rem;
+  position: absolute;
+  color: white;
+  background-color: brown;
+}
+.info__texto p {
+  text-align: center;
+  font-size: 18px;
+  background-color: rgb(34, 33, 33);
+  padding: 0.3rem;
+}
+
+/*cosas del formulario del contacto*/
+.formulario {
+  text-align: left;
+  margin: 4rem 2rem 16rem 2rem;
+  border: solid rgb(34, 33, 33);
+  padding: 1rem;
+  background-color: brown;
+  color: white;
+}
+
+/*parte de lafoto del index*/
+.tortas_fondo {
+  width: 100%;
+  display: flex;
+}
+
+h3 {
+  margin: 1rem;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  justify-items: center;
+}
+.contenedor .tarjetas {
+  width: 200px;
+  height: 250px;
+  margin: 1rem;
+  border: solid;
+  text-align: center;
+}
+.contenedor .tarjetas {
+  display: inline-block;
+}
+.contenedor .imagenes__tarjetas {
+  margin-top: 20px;
+  height: 200px;
+  display: inline;
+}
+
+/*responsive de las cards*/
+@media screen and (max-width: 767px) {
+  .contenedor {
+    grid-template-columns: 2fr 2fr;
+  }
+}
+@media screen and (max-width: 460px) {
+  .contenedor {
+    grid-template-columns: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

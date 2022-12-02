@@ -1,0 +1,97 @@
+/*variables de colores*/
+$colorb1: brown;
+$colorb2: rgb(34, 33, 33);
+$colorb3: white;
+$colorb4: rgb(237, 215, 117);
+/*aca hago el reeset*/
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Playfair Display', serif;
+
+}
+
+.menu
+{
+background-color: $colorb1;
+color: $colorb3;
+display: flex;
+justify-content: space-between;
+padding: 1rem;
+    /*cuestiones basicas del menu inicio*/
+    .navegacion{
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+        align-items: flex-end;
+        .enlaces{
+            margin: 0.2rem;
+            text-decoration: none;
+            a{
+                text-decoration: none;
+                color: $colorb3;
+                transition: 1s;
+                /*zona animada*/
+                &:hover{
+                    text-decoration: none;
+                    color: $colorb4;
+                    transition: 1s;
+                }
+            }
+        }
+    }
+}
+/*parte responsive para todos*/
+@media screen and (max-width: 767px)
+{
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+@media screen and (max-width: 460px)
+{
+    .menu
+    {
+        gap: .5rem;
+        .navegacion
+        {
+            flex-direction: column;
+            align-items: center;
+            gap: .5rem;
+        }
+    }
+
+}
+.cosas{
+    background-color: $colorb2;
+    color: $colorb3;
+    text-align: center;
+    padding: 1.5rem;
+}
+/*comienza la declaracion de la seccion informacion*/
+.info__texto{
+    margin: 2rem;
+    padding: 1rem;
+    position: absolute;
+    color: $colorb3;
+    background-color: $colorb1;
+    p{
+        text-align: center;
+        font-size: 18px;
+        background-color:$colorb2;
+        padding: 0.3rem;
+    }
+}
+/*cosas del formulario del contacto*/
+.formulario{
+    text-align: left;
+    margin: 4rem 2rem 16rem 2rem;
+    border: solid $colorb2;
+    padding: 1rem;
+    background-color: $colorb1;
+    color: $colorb3;
+}

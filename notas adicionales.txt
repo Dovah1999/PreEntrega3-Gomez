@@ -1,0 +1,1 @@
+realice el scss con el segundo metodo de compilacion
